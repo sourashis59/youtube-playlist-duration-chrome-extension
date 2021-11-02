@@ -1,0 +1,55 @@
+:root {
+    --htmlWidth: 400px;
+}
+
+html {
+    width: var(--htmlWidth);
+    height: auto;
+    /* width: auto; */
+
+    background: linear-gradient(#ffcece, #b8bdf5);
+
+    font-size: 1.5rem;
+    font-family: "DM Sans", sans-serif;
+}
+
+body {
+    /* padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+
+    padding: 0.7rem; */
+    /* background-color: aqua; */
+}
+
+.hidden {
+    display: none !important;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#loadingImage {
+    width: 200px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    /* background: url(); */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.alignItemsCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redText {
+    color: red;
+}

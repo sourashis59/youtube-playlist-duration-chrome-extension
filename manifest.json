@@ -1,0 +1,23 @@
+{
+    "name" : "YouTube Playlist Duration",
+    "version" : "0.0.1",
+    "manifest_version" : 3,
+
+    "content_scripts" : [
+        {
+            "matches" : ["<all_urls>"],
+            "js" : ["Content.js" ]
+        }    
+    ],
+
+    "action" : {
+        "default_popup" : "popup.html",
+         "default_icon" : "logo.png",
+         "default_title" : "Get YouTube Playlist Duration"
+    },
+
+    "icons" : {
+        "128" : "logo.png"
+    },
+    "permissions" : ["activeTab" , "tabs"]
+}

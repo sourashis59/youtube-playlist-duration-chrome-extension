@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/spinner.css">
+    <link rel="stylesheet" href="css/border.css">
+
+    <title>YouTube Playlist Duration</title>
+</head>
+<body >
+    
+   
+    <div class="container p-2 rainbow ">
+        
+
+        <div class="container whiteText  " id="playlistDetailContainer">
+        
+
+            <div class="container  resultContainer alignItemsCenter hidden" id="fetchingDetails">
+                <div class="container fetchingSpinner">
+                    <span class="" id = "fetchingText" >Fetching details </span>
+                    <div class="loader"></div>
+                    
+                </div>
+
+                <img src="media/reload-cat.gif" alt="" id="loadingImage">
+            </div>
+
+
+            <div class="container resultContainer  " id="playlistDetail">        
+                <div>Total duration of playlist : 
+                    <div><strong id="playlistDuration"></strong></div>
+                </div>
+
+                <br>
+                <div>Total No. of videos : <strong id="totalVideCount"></strong></div>
+                <div>Total No. of Public videos : <strong id="publicVideoCount"></strong></div>
+            
+            </div>
+            
+            
+            <div class="container  resultContainer alignItemsCenter hidden redText" id="invalidURL">
+                <strong>
+                    <p class="">Not a valid YouTube Playlist 😐</p>
+                </strong>
+            </div>
+            
+            
+            
+            
+            
+            
+            <div class="container  resultContainer redText hidden " id="apiKeyQuotaExceeded">
+                <strong>
+                    <p class="">YouTube API Key's Quota for today Exceeded , please try again after 12am :😐</p>
+                </strong>
+            </div>
+        
+        
+        
+        
+        
+        
+        
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="popup.js"></script>
+
+</body>
+
+
+    
+</html>
